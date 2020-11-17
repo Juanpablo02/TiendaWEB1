@@ -42,9 +42,19 @@
             return($buscarDatos -> fetchAll());
             
         }
+
+        public function eliminarProducto($eliminarPro){
+            $conexion = $this -> conectarBD();
+            $eliminarDatos = $conexion -> prepare($eliminarPro);
+            $resultado = $eliminarDatos -> execute();
+
+            if($resultado){
+                echo("Exito al eliminar el producto");
+            } else {
+                echo("Error al eliminar el producto");
+            }
+        }
     }
-
-
 
 
 ?>

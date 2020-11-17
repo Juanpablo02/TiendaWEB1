@@ -4,8 +4,8 @@
 
     if(isset($_POST["enviar"])){
 
-        $imagen = $_POST["imagen"];
         $nombre = $_POST["nombre"];
+        $imagen = $_POST["imagen"];
         $marca = $_POST["marca"];
         $referencia = $_POST["referencia"];
         $precio = $_POST["precio"];
@@ -14,7 +14,7 @@
 
         $transaccion = new BaseDatos;
 
-        $agregarPro = "INSERT INTO productos (nombre, marca, referencia, precio, fecha, descripcion) VALUES ('$nombre','$marca','$referencia','$precio','$fecha','$descripcion')";
+        $agregarPro = "INSERT INTO productos (nombre, imagen, marca, referencia, precio, fecha, descripcion) VALUES ('$nombre','$imagen','$marca','$referencia','$precio','$fecha','$descripcion')";
 
         $transaccion -> agregarProducto($agregarPro);
 

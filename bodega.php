@@ -42,7 +42,7 @@
                     <?php foreach($productos as $producto):?>
                         <div class="col mb-4">
                             <div class="card h-100">
-                                <img src="http://placeimg.com/640/480/people" class="card-img-top" alt="...">
+                                <img src="<?php echo($producto["imagen"]) ?>" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h3 class="card-title"><?php echo($producto["nombre"]) ?></h3>
                                     <br>
@@ -52,8 +52,8 @@
                                     <p class="card-text"><strong>Fecha de Ingreso: </strong><?php echo($producto["fecha"]) ?></p>
                                     <p class="card-text"><strong>Descripción: </strong><?php echo($producto["descripcion"]) ?></p>
                                     <p class="card-text" style="text-align: center;">
-                                        <button type="button" class="btn btn-primary">Actualizar</button>
-                                        <button type="button" class="btn btn-primary">Borrar</button>
+                                        <a href="" class="btn btn-primary">Actualizar</a>
+                                        <a href="eliminarProducto.php?id=<?php echo($producto["idProducto"]) ?>" class="btn btn-primary">Borrar</a>
                                     </p>
                                 </div>
                             </div>

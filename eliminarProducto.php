@@ -10,4 +10,6 @@
 
     $transaccion -> eliminarProducto($eliminarPro);
 
+    header("location:bodega.php");
+
 ?>

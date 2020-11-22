@@ -13,7 +13,7 @@
     <header id="header">
         <nav class="menu">
             <div class="logo">
-                <span><h1><a href="#" class="btn-menu">Cell-Store<i class="fas fa-mobile-alt"></i></a></h1></span>
+                <span><h1><a href="index.php" class="btn-menu">Cell-Store<i class="fas fa-mobile-alt"></i></a></h1></span>
             </div>
             <div class="list-container">
                 <ul class="list lista">

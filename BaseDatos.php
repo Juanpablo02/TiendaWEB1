@@ -54,6 +54,19 @@
                 echo("Error al eliminar el producto");
             }
         }
+
+        public function editarProducto($editarPro){
+
+            $conexion = $this -> conectarBD();
+            $editarDatos = $conexion -> prepare($editarPro);
+            $resultado = $editarDatos -> execute();
+
+            if($resultado){
+                echo("Exito");
+            } else {
+                echo("Error");
+            }
+        }
     }
 
 

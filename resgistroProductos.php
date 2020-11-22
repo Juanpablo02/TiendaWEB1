@@ -18,6 +18,8 @@
 
         $transaccion -> agregarProducto($agregarPro);
 
+        header("location:index.php");
+
     }
 
 ?>
